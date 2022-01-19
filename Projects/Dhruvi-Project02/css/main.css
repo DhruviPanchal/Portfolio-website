@@ -1,0 +1,659 @@
+/* FRAMEWORK */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    width: 375px;
+    height: 667px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    width: 375px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    z-index: 1000;
+}
+
+section {
+    position: fixed;
+    top: 60px;
+    width: 375px;
+    height: 547px;
+    background: #FFF;
+    overflow: auto;
+    padding: 20px;
+}
+
+footer {
+    width: 375px;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: lightgrey;
+}
+
+/* SPLASH SCREEN */
+#splash {
+    text-align: center;
+    /*background-color: #cc3300;*/
+    background-color: bisque;
+    background-size: cover;
+}
+
+.splashHeader {
+    width: 375px;
+    padding: 20px;
+    border-bottom: solid 5px #FFF;
+    background: #cc3300;;
+    font-size: 30px;
+    color: #FFF;
+}
+
+#splash img {
+    margin-top: 150px;
+    width: 200px;
+    height: auto;
+}
+
+.splashFooter {
+    width: 375px;
+    height: 10px;
+    position: fixed;
+    bottom: 0;
+    background: #cc3300;
+}
+
+/* LANDING SCREEN */
+#landing {
+    text-align: center;
+    background-color: bisque;
+    background-size: cover;
+}
+
+.landingHeader {
+    width: 375px;
+    border-bottom: solid 5px #FFF;
+    background: #cc3300;
+}
+
+.landingLogos {
+    border: 1px #342000;
+    padding-top: -10px;
+    margin: 20px auto;
+    height: 175px;
+    width: 175px;
+}
+
+#logo1{
+    margin-top: -1px;
+}
+
+#logo2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#logo3{
+    margin-top: -1px;
+    width: 50%;
+}
+
+#logo3 img{
+   width: 50%; 
+    padding-top: -55px;
+}
+
+
+.landingHeader img {
+    width: 85px;
+    height: auto;
+}
+
+.landingFooter {
+    width: 375px;
+    height: 15px;
+    position: fixed;
+    bottom: 0;
+    background: #cc3300;
+}
+
+/* MENU */
+#menu {
+    background-color: darkgrey;
+}
+
+.menuHeader{
+    
+    margin-left: 10px;
+}
+.menuBtn {
+    padding: 20px;
+    background: #FFF;
+    margin-top: 7px;
+    font-size: 16px;
+}
+
+.menuBtn img {
+    width: 25px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    margin-top: -1px;
+}
+
+.menuBtn span {
+    display: block;
+    margin-top: 2px;
+}
+
+/* SHARED RESTAURANT */
+/* header/footer */
+header img {
+    width: 35px;
+    height: auto;
+    float: left;
+    margin-right: 85px;
+}
+
+header h1 {
+    margin: 0;
+    color: #FFF;
+}
+
+.logoReveal{
+    width: 120px;
+    height: 100px;
+    margin-left: 50x;
+    margin-top: -1.7rem;
+}
+
+.logoReveal0{
+    width: 160px;
+    height: 140px;
+    margin-left: -1rem;
+    margin-top: -1.5rem;
+}
+
+.logoReveal1{
+    width: 60px;
+    height: 60px;
+    margin-left: 50x;
+    margin-top: -0.09rem;
+}
+
+footer div {
+    float: left;
+    text-align: center;
+    overflow: auto;
+    font-size: 12px;
+    padding: 10px;
+    color: #000;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer img {
+    height: 25px;
+    width: auto;
+}
+
+.sectionContainer {
+    overflow: auto;
+    color: #000;
+}
+
+.photoAddress {
+    padding: 0 15px;
+    text-align: left;
+}
+
+.homeImg {
+    width: 300px;
+    
+}
+
+.homeImg1 {
+    width: 300px;
+    margin-left:-1rem;
+    margin-top:-4rem;
+}
+
+.rating {
+    width: 100px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.photoCount {
+    border: solid 1px #fff;
+    padding: 1px;
+    text-align: center;
+    width: 148px;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: -15px;
+}
+
+.hours {
+    margin-top: 20px;
+}
+
+.hours h2 {
+    color: darkgray;
+    margin: 0;
+    margin-left: 60px;
+    border-bottom: solid 1px #fff;
+    width: 210px;
+}
+
+.hours p {
+    color: #7fc193;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.reviews {
+    margin: 20px;
+}
+
+.profile {
+    text-align: left;
+    border-bottom: solid 1px #fff;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+
+.profile img {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+.profile p {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.profile p:last-child {
+    font-family: 'Hammersmith One', sans-serif !important;
+    margin-top: 5px;
+}
+
+.reviews p:last-child {
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* general specials/reservations */
+.sectionBanner {
+    width: 359px;
+    height: 67px;
+    background-size: 359px auto;
+    margin-left: -12px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 10px;
+    background-color: black;
+}
+
+.specials .sectionContainer {
+    border-top: none;
+    text-align: left;
+}
+
+/* specials section */
+.nightContainer {
+    padding: 10px;
+    margin: 20px 0;
+    overflow: auto;
+}
+
+.nightContainer:first-child {
+    margin-top: 10px;
+}
+
+.nightContainer img {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.nightContainer div {
+    float: left;
+    width: 150px;
+}
+
+.nightContainer h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.nightContainer p {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.sub {
+    font-size: 20px;
+    margin: 0 !important;
+    color: #0646a5;
+}
+
+.sub0{
+    font-size: 20px;
+    margin: 0 !important;
+    color: #91ac51;
+}
+
+
+.sub1 {
+    font-size: 20px;
+    margin: 0 !important;
+    color: #993617;
+}
+
+.nightContainer ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    padding-left: 15px;
+    color: #607f17;
+    margin-top: 5px;
+}
+
+.nightContainer li {
+    padding: 0;
+}
+
+.altImg {
+    float: right !important;
+    margin: 0 !important;
+    margin-left: 10px !important;
+}
+
+/* reservations section */
+.reservations .sectionContainer {
+    border-top: none;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.reservations h2 {
+    margin-top: 10px;
+}
+
+form {
+    font-family: 'Quicksand', sans-serif;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border: solid 1px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #666;
+    font-family: 'Quicksand', sans-serif;
+    background: #FFF;
+}
+
+#reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Hammersmith One', sans-serif;
+    margin-top: 15px;
+}
+
+/* RESTAURANT 1 */
+/* header/footer */
+
+#rest1 footer {
+    background-color: lightgrey;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* footer subnav */
+#rest1 .homeIcon {
+    margin-left: 55px;
+}
+
+#rest1 .specialsIcon {
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+#rest1 .logo {
+    width: 80%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* home */
+#rest1 .bar {
+    background: #000;
+    padding: 3px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* general specials/reservations */
+
+/* specials */
+#rest1 .nightContainer {
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+/* reservations */
+
+#rest1 .reservations .sectionContainer {
+    color: #000;
+}
+
+#rest1 .reservations h2 {
+    border-bottom: solid 1px black;
+    color: #065aac;
+}
+
+#rest1 input, #rest1 select, #rest1 , textarea {
+    border-color: #000;
+}
+
+#rest1 input:focus, #rest1 select:focus, #rest1 textarea:focus {
+    outline: none;
+    background: rgba(175, 211, 90, 0.05);
+}
+
+#rest1 .reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #065aac;
+}
+
+#rest1 .reserve:active {
+    border-color: #fff !important;
+    color: black;
+    background: #FFF;
+}
+
+#rest1 .activeIcon {
+    background: #fff;
+}
+
+/* RESTAURANT 2 */
+/* header/footer */
+
+#rest2 footer {
+    background-color: lightgrey;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* footer subnav */
+#rest2 .homeIcon {
+    margin-left: 55px;
+}
+
+#rest2 .specialsIcon {
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+#rest2 .logo {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* home */
+#rest2 .bar {
+    background: #000;
+    padding: 3px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* general specials/reservations */
+
+/* specials */
+#rest2 .nightContainer {
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+/* reservations */
+#rest2 .reservations .sectionContainer {
+    color: #000;
+}
+
+#rest2 .reservations h2 {
+    border-bottom: solid 1px black;
+}
+
+#rest2 input, #rest2 select, #rest2 , textarea {
+    border-color: #000;
+}
+
+#rest2 input:focus, #rest2 select:focus, #rest2 textarea:focus {
+    outline: none;
+    background: rgba(175, 211, 90, 0.05);
+}
+
+#rest2 .reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #000;
+}
+
+#rest2 .reserve:active {
+    border-color: #fff !important;
+    color: black;
+    background: #FFF;
+}
+
+#rest2 .activeIcon {
+    background: #fff;
+}
+
+/* RESTAURANT 3 */
+/* header/footer */
+
+#rest3 footer {
+    background-color: lightgrey;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* footer subnav */
+#rest3 .homeIcon {
+    margin-left: 55px;
+}
+
+#rest3 .specialsIcon {
+    margin-left: 30px;
+    margin-right: 25px;
+}
+
+#rest3 .logo {
+    width: 80%;
+    height: auto;
+    margin: 15px 0;
+   
+}
+
+/* home */
+#rest3 .bar {
+    background: #000;
+    padding: 3px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* general specials/reservations */
+
+/* specials */
+#rest3 .nightContainer {
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+/* reservations */
+#rest3 .reservations .sectionContainer {
+    color: #000;
+}
+
+#rest3 .reservations h2 {
+    border-bottom: solid 1px black;
+    color: #8f1616;
+}
+
+#rest3 input, #rest3 select, #rest3 , textarea {
+    border-color: #000;
+}
+
+#rest3 input:focus, #rest3 select:focus, #rest3 textarea:focus {
+    outline: none;
+    background: rgba(175, 211, 90, 0.05);
+}
+
+#rest3 .reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #8f1616;
+}
+
+#rest3 .reserve:active {
+    border-color: #fff !important;
+    color: black;
+    background: #FFF;
+}
+
+#rest3 .activeIcon {
+    background: #fff;
+}

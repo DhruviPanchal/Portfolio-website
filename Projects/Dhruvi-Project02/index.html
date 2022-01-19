@@ -1,0 +1,926 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <!-- meta tag to make sure content is same width as device and not scalabl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>FOOD HEAVEN</title>
+    
+    <link rel="apple-touch-icon" sizes="114x114" href="img/FoodHeavenLogo.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <!-- link to fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    <!-- link to css files -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- link to js files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <!-- MENU -->
+    <main id="menu">
+        <div class="menuHeader">FOOD HEAVEN</div>
+        <div id="backToLanding" class="menuBtn"><img src="img/Home_Icon.svg" alt="Home" /><span>Select a New Restaurant</span></div>
+        <div id="contact" class="menuBtn"><img src="img/contact_icon.svg" alt="Contact" /><span>Contact Family of Eateries</span></div>
+        <div id="about" class="menuBtn"><img src="img/about_icon.svg" alt="About" /><span>About Family of Eateries</span></div>
+    </main>
+    <!-- SPLASH SCREEN -->
+    <main id="splash">
+        <div class="splashHeader">FOOD HEAVEN</div>
+        <img src="img/FoodHeavenLogo.png" alt="Family of Eateries" />
+        <div class="splashFooter"></div>
+    </main>
+    <!-- LANDNG SCREEN -->
+    <main id="landing">
+        <div class="landingHeader">
+            <img src="img/FoodHeavenLogo.png" alt="Family of Eateries" />
+        </div>
+        <div id="logo1" class="landingLogos">
+            
+            <img src="img/cevicheLogo.svg" alt="Ceviche" />
+        </div>
+        <div id="logo2" class="landingLogos">
+          
+            <img src="img/finevinesLogo.svg" alt="five Wine" />
+        </div>
+        <div id="logo3" class="landingLogos">
+            
+            <img class="crispy" src="img/NewCrispy'sLogo.png" alt="Crispy" />
+        </div>
+        <div class="landingFooter"></div>
+    </main>
+    
+    
+    <!-- RESTAURANT 1 -->
+    <main id="rest1" class="rest">
+        <header>
+            <img class="hamburger" data-click-state="1" src="img/hamburger.png" alt="Menu" />
+            <div class="sectionContainer">
+                <img class="logoReveal" src="img/cevicheLogo.svg" alt="Ceviche" />
+            </div>
+        </header>
+        
+        <!-- HOME -->
+       <section class="home">
+            <div class="sectionContainer">
+               
+            
+                <div class="photoAddress reveal">
+                    <img class="homeImg" src="img/homerest1.jpg" alt="Home" />
+                
+                
+                 <div class="photoAddress reveal1">
+                    <img class="homeImg1" src="img/homerest2.jpg" alt="Home" />
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- SPECIALS -->
+        <section class="specials">
+            
+            <div class="sectionContainer">
+                <div class="nightContainer reveal">
+                    <img src="img/Shrimp-Tacos.jpg" alt="Monday Special" />
+                    <div>
+                       
+                        <p class="sub">SHRIMP-TACOS</p>
+                        
+                    </div>
+                </div>
+                <div class="nightContainer reveal">
+                    <img class="altImg" src="img/Crevette.jpg" alt="Monday Special" />
+                    <div>
+
+                        <p class="sub">CREVETTE</p>
+                    
+                    </div>
+                </div>
+                <div class="nightContainer reveal">
+                    <img src="img/Pieuvre-.jpg" alt="Monday Special" />
+                    <div>
+                        
+                        <p class="sub">PIEUVRE</p>
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RESERVATIONS -->
+        <section class="reservations">
+            
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" id="phone" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" id="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select id="time" name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select id="guests" name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea id="requests" name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="homeIcon icons activeIcon">
+                <img src="img/Home_Icon.svg" alt="Home" />
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon icons">
+                <img src="img/specials_icon.svg" alt="Specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon icons">
+                <img src="img/reservation_icon.svg" alt="Reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    
+    
+    <!-- RESTAURANT 2 -->
+    
+    <main id="rest2" class="rest">
+        <header>
+            <img class="hamburger" data-click-state="1" src="img/hamburger.png" alt="Menu" />
+            <div class="sectionContainer">
+                <img class="logoReveal0" src="img/finevinesLogo.svg" alt="Ceviche" />
+            </div>
+        </header>
+        
+        
+         <!-- HOME -->
+       <section class="home">
+            <div class="sectionContainer">
+               
+            
+                <div class="photoAddress reveal">
+                    <img class="homeImg" src="img/homerest3.png" alt="Home" />
+                
+                
+                 <div class="photoAddress reveal1">
+                    <img class="homeImg1" src="img/homerest4.png" alt="Home" />
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- SPECIALS -->
+        <section class="specials">
+            
+            <div class="sectionContainer">
+                <div class="nightContainer reveal">
+                    <img src="img/TomatoBruschetta.jpg" alt="Monday Special" />
+                    <div>
+                       
+                        <p class="sub0">FRESH TOMATO <BR>BRUSCHETTA</p>
+                        
+                    </div>
+                </div>
+                <div class="nightContainer reveal">
+                    <img class="altImg" src="img/rest2pic2.jpg" alt="Monday Special" />
+                    <div>
+
+                        <p class="sub0">MIKES SPIN DIP</p>
+                    
+                    </div>
+                </div>
+                <div class="nightContainer reveal">
+                    <img src="img/rest2pic3.jpg" alt="Monday Special" />
+                    <div>
+                        
+                        <p class="sub0">DIP FRIED PICKLES</p>
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RESERVATIONS -->
+        <section class="reservations">
+            
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" id="phone" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" id="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select id="time" name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select id="guests" name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea id="requests" name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="homeIcon icons activeIcon">
+                <img src="img/Home_Icon.svg" alt="Home" />
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon icons">
+                <img src="img/specials_icon.svg" alt="Specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon icons">
+                <img src="img/reservation_icon.svg" alt="Reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    
+    
+    <!-- RESTAURANT 3 -->
+    <main id="rest3" class="rest">
+        <header>
+            <img class="hamburger" data-click-state="1" src="img/hamburger.png" alt="Menu" />
+            <div class="sectionContainer">
+                <img class="logoReveal1" src="img/NewCrispy'sLogo.png" alt="Crispy" />
+            </div>
+        </header>
+        <!-- HOME -->
+       <section class="home">
+            <div class="sectionContainer">
+               
+            
+                <div class="photoAddress reveal">
+                    <img class="homeImg" src="img/homerest5.jpg" alt="Home" />
+                
+                
+                 <div class="photoAddress reveal1">
+                    <img class="homeImg1" src="img/homerest6.jpg" alt="Home" />
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- SPECIALS -->
+        <section class="specials">
+            
+            <div class="sectionContainer">
+                <div class="nightContainer reveal">
+                    <img src="img/rest3pic1.jpg" alt="Monday Special" />
+                    <div>
+                       
+                        <p class="sub1">MIXED BONELESS<br>FRIED CHICKEN</p>
+                        
+                    </div>
+                </div>
+                <div class="nightContainer reveal">
+                    <img class="altImg" src="img/rest3pic2.jpg" alt="Monday Special" />
+                    <div>
+
+                        <p class="sub1">CHICKEN SHAWARMA <br>PITA</p>
+                    
+                    </div>
+                </div>
+                <div class="nightContainer reveal">
+                    <img src="img/rest3pic3.jpg" alt="Monday Special" />
+                    <div>
+                        
+                        <p class="sub1">FRASICO SUB<br>COMBO</p>
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RESERVATIONS -->
+        <section class="reservations">
+            
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" id="phone" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" id="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select id="time" name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select id="guests" name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea id="requests" name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="homeIcon icons activeIcon">
+                <img src="img/Home_Icon.svg" alt="Home" />
+                <p>Home</p>
+            </div>
+            <div class="specialsIcon icons">
+                <img src="img/specials_icon.svg" alt="Specials" />
+                <p>Specials</p>
+            </div>
+            <div class="reservationsIcon icons">
+                <img src="img/reservation_icon.svg" alt="Reservations" />
+                <p>Reservations</p>
+            </div>
+        </footer>
+    </main>
+    
+    <script>
+        // hide all main elements except for selected index in brackets
+        //$("main:gt(3)").hide();
+        //$("#rest1 section:gt(2)").hide();
+        
+        // hide all main and section divs
+        $("main, section").hide();
+        
+        // animate on the splash screen
+        function loadSplash() {
+            
+            $("#splash").show();
+
+            TweenMax.from("#splash", 0.5, {
+                delay: 0.25,
+                opacity: 0
+            });
+
+            TweenMax.from(".splashHeader", 0.5, {
+                delay: 0.5,
+                y: -$(".splashHeader").outerHeight(),
+                ease: Sine.easeInBounce
+            });
+
+            TweenMax.from(".splashFooter", 0.5, {
+                delay: 0.5,
+                y: $(".splashFooter").outerHeight(),
+                ease: Sine.easeInBounce
+            });
+
+            TweenMax.from("#splash img", 0.5, {
+                delay: 1,
+                scale: 0,
+                ease: Back.easeInBounce
+            });
+
+            TweenMax.to("#splash", 0.5, {
+                delay: 4,
+                opacity: 0,
+                onComplete: loadLanding
+            });
+            
+        }
+        
+        // load the splash screen on startup
+        loadSplash();
+        
+        // animate on the landing screen
+        function loadLanding() {
+            
+            //$("#splash").hide();
+            
+           
+            $("main, section").hide().css({opacity:1});
+            
+            
+            $("#landing").show();
+            
+            TweenMax.from("#landing", 0.5, {
+                delay: 0.25,
+                opacity: 0
+            });
+
+            TweenMax.from(".landingHeader", 0.5, {
+                delay: 0.5,
+                y: -$(".landingHeader").outerHeight(),
+                ease: Sine.easeOut
+            });
+
+            TweenMax.from(".landingFooter", 0.5, {
+                delay: 0.25,
+                y: $(".landingFooter").outerHeight(),
+                ease: Sine.easeOut
+            });
+
+            TweenMax.from("#logo1", 0.5, {
+                delay: 1,
+                opacity: 0
+            });
+
+            TweenMax.from("#logo2", 0.5, {
+                delay: 1.25,
+                opacity: 0
+            });
+
+            TweenMax.from("#logo3", 0.5, {
+                delay: 1.5,
+                opacity: 0
+            });
+            
+            
+            $("#logo1").click(function() {
+                
+                TweenMax.to("#landing", 0.5, {
+                    opacity: 0,
+                    onComplete: loadRest1
+                });
+                
+            });
+            
+            $("#logo2").click(function() {
+                
+                TweenMax.to("#landing", 0.5, {
+                    opacity: 0,
+                    onComplete: loadRest2
+                });
+                
+            });
+            
+            $("#logo3").click(function() {
+                
+                TweenMax.to("#landing", 0.5, {
+                    opacity: 0,
+                    onComplete: loadRest3
+                });
+                
+            });
+        }
+        
+        // disable loadSplash to load just landing screen
+        //loadLanding();
+        
+        // animate on the restaurant 1 + home section
+        function loadRest1() {
+            
+            $("#landing").hide();
+            
+            $("#rest1").show();
+
+            TweenMax.from("#rest1 header", 0.5, {
+                delay: 0.25,
+                y: -$("#rest1 header").outerHeight(),
+                ease: Sine.easeOutBack
+            });
+
+            TweenMax.from("#rest1 footer", 0.5, {
+                delay: 0.25,
+                y: $("#rest1 footer").outerHeight(),
+                ease: Sine.easeOutBack
+            });
+            
+            $("#rest1 .home").show();
+
+            TweenMax.from("#rest1 .home", 0.5, {
+                delay: 0.75,
+                opacity: 0
+            });
+            
+            $("#rest1 .home .reveal").each(function(i) {
+                
+                TweenMax.from(this, 1, {
+                    delay: 1.25 + i * 0.15,
+                    opacity: 0,
+                    y: -10,
+                    ease: Elastic.easeOutBack
+                });
+                
+            });
+            
+            $("#rest1 .homeIcon").click(function() {
+                
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest1 section", "#rest1 .home");
+                }
+                
+            });
+            
+            $("#rest1 .specialsIcon").click(function() {
+                
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest1 section", "#rest1 .specials");
+                }
+                
+            });
+            
+            $("#rest1 .reservationsIcon").click(function() {
+                
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest1 section", "#rest1 .reservations");
+                }
+                
+            });
+            
+        }
+        
+        // disable loadSplash to load just load restaurant 1 screen
+        //loadRest1();
+        
+        // animate on the restaurant 2 + home section
+        function loadRest2() {
+            
+            $("#landing").hide();
+            
+            $("#rest2").show();
+
+            TweenMax.from("#rest2 header", 0.5, {
+                delay: 0.25,
+                y: -$("#rest2 header").outerHeight(),
+                ease: Sine.easeInQuart
+            });
+
+            TweenMax.from("#rest2 footer", 0.5, {
+                delay: 0.25,
+                y: $("#rest2 footer").outerHeight(),
+                ease: Sine.easeInQuart
+            });
+            
+            $("#rest2 .home").show();
+
+            TweenMax.from("#rest2 .home", 0.5, {
+                delay: 0.75,
+                opacity: 0
+            });
+            
+            $("#rest2 .home .reveal").each(function(i) {
+                
+                TweenMax.from(this, 1, {
+                    delay: 1.25 + i * 0.15,
+                    opacity: 0,
+                    y: -10,
+                    ease: Elastic.easeInQuart
+                });
+                
+            });
+            
+    
+            $("#rest2 .homeIcon").click(function() {
+                
+               
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest2 section", "#rest2 .home");
+                }
+                
+            });
+            
+            $("#rest2 .specialsIcon").click(function() {
+                
+        
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest2 section", "#rest2 .specials");
+                }
+                
+            });
+            
+            $("#rest2 .reservationsIcon").click(function() {
+                
+               
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest2 section", "#rest2 .reservations");
+                }
+                
+            });
+            
+        }
+        
+        // disable loadSplash to load just load restaurant 2 screen
+        //loadRest2();
+        
+        // animate on the restaurant 3 + home section
+        function loadRest3() {
+            
+             $("#landing").hide();
+            
+            $("#rest3").show();
+
+            TweenMax.from("#rest3 header", 0.5, {
+                delay: 0.25,
+                y: -$("#rest3 header").outerHeight(),
+                ease: Sine.easeOutExpo
+            });
+
+            TweenMax.from("#rest3 footer", 0.5, {
+                delay: 0.25,
+                y: $("#rest3 footer").outerHeight(),
+                ease: Sine.easeOutExpo
+            });
+            
+            $("#rest3 .home").show();
+
+            TweenMax.from("#rest3 .home", 0.5, {
+                delay: 0.75,
+                opacity: 0
+            });
+            
+            $("#rest3 .home .reveal").each(function(i) {
+                
+                TweenMax.from(this, 1, {
+                    delay: 1.25 + i * 0.15,
+                    opacity: 0,
+                    y: -10,
+                    ease: Elastic.easeOutExpo
+                });
+                
+            });
+            
+
+            $("#rest3 .homeIcon").click(function() {
+                
+             
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest3 section", "#rest3 .home");
+                }
+                
+            });
+            
+            $("#rest3 .specialsIcon").click(function() {
+                
+              
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest3 section", "#rest3 .specials");
+                }
+                
+            });
+            
+            $("#rest3 .reservationsIcon").click(function() {
+              
+                if(!$(this).hasClass("activeIcon"))
+                {
+                    $(".icons").removeClass("activeIcon");
+            
+                    $(this).addClass("activeIcon");
+
+                    loadSection("#rest3 section", "#rest3 .reservations");
+                }
+                
+            });
+            
+        }
+        
+        // disable loadSplash to load just load restaurant 3 screen
+        //loadRest3();
+        
+        // function for loading internal restaurant sections
+        function loadSection(prevSection, nextSection) {
+            
+            TweenMax.to(prevSection, 0.5, {
+                opacity: 0,
+                onComplete: function() {
+                
+                    $(prevSection).hide().css({opacity: 1});
+                    
+                    $(nextSection).show().scrollTop(0);
+
+                }
+            });
+            
+            TweenMax.from(nextSection, 0.5, {
+                delay: 0.5,
+                opacity: 0
+            });
+            
+            $(nextSection + " .reveal").each(function(i) {
+                
+                TweenMax.from(this, 1, {
+                    delay: 1 + i * 0.15,
+                    opacity: 0,
+                    y: -10,
+                    ease: Elastic.easeOut
+                });
+                
+            });
+            
+        }
+        
+          
+        $(".hamburger").click(function(){
+            
+            if($(this).attr("data-click-state") == 1) {
+                
+                $("#menu").show();
+                
+                $(this).attr("data-click-state", 0);
+                
+                $(this).attr("src", "img/Hamburger.gif");
+                
+                TweenMax.to(".rest", 0.5, {
+                    x: 310,
+                    ease: Sine.easeOut
+                });
+                
+            }else{
+                
+                $(this).attr("data-click-state", 1);
+                
+                $(this).attr("src", "img/hamburger.png");
+                 
+                 TweenMax.to(".rest", 0.5, {
+                  x: 0,
+                  ease: Sine.easeOut,
+                  onComplete: function() {
+                    $("#menu").hide();
+                }
+                
+            });
+                 
+            }
+        });
+       
+        $("#backToLanding").click(function(){
+            
+            $(".hamburger").attr("data-click-state", 1);
+            
+            $(".hamburger").attr("src", "img/hamburger.png");
+            
+                TweenMax.to(".rest", 0.5, {
+                    x: 0,
+                    ease: Sine.easeOut,
+                    onComplete: function() {
+                        
+                        TweenMax.to("main", 0.5, {
+                            opacity: 0,
+                            onComplete: loadLanding
+                        });
+                    }
+                });
+        });
+        
+        $("#contact").click(function(){
+            alert("Conatct Family of Eateries");
+        });
+        
+         $("#about").click(function(){
+            alert("About Family of Eateries");
+        });  //End of week 9 code
+        
+        
+    </script>
+</body>
+
+</html>
